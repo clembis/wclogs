@@ -29,9 +29,7 @@ To use this script, you need a Client ID and Client Secret from Warcraft Logs.
 
 - Log in to your Warcraft Logs account.
 
-- Navigate to your profile settings by clicking your avatar and selecting Settings.
-
-- In the left-hand menu, go to the API Clients section.
+- Reach to this url **https://www.warcraftlogs.com/api/clients/**
 
 - Click Create Client and fill out the form:
 
