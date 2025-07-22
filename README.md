@@ -77,7 +77,7 @@ source venv/bin/activate
 pip install requests
 ```
 
-##Usage
+## Usage
 The script is run from the command line with arguments providing your API credentials and the report URL.
 
 ### 3. Command Syntax
