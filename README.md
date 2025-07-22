@@ -47,29 +47,48 @@ After creating the client, you will be provided with a Client ID and a Client Se
 It is highly recommended to use a Python virtual environment to manage dependencies.
 
 #### 1. Clone or download the repository and navigate into the project directory
+
+```
 cd /path/to/your/project
+```
 
 #### 2. Create a virtual environment
+
+```
 python -m venv venv
+```
 
 #### 3. Activate the virtual environment
 On Windows:
+
+```
 venv\Scripts\activate
+```
 
 On macOS/Linux:
+
+```
 source venv/bin/activate
+```
 
 #### 4. Install the required libraries
+
+```
 pip install requests
+```
 
 ##Usage
 The script is run from the command line with arguments providing your API credentials and the report URL.
 
 ### 3. Command Syntax
 
+```
 python wcl_to_mdt.py --client-id "YOUR_CLIENT_ID" --client-secret "YOUR_CLIENT_SECRET" --url "WCL_REPORT_URL" [--fight FIGHT_ID]
+```
 
 Arguments
+
+```
 --client-id: (Required) Your Warcraft Logs API v2 Client ID.
 
 --client-secret: (Required) Your Warcraft Logs API v2 Client Secret.
@@ -77,13 +96,17 @@ Arguments
 --url: (Required) The full URL of the Warcraft Logs report you want to analyze.
 
 --fight: (Optional) The specific fight ID from the report to convert. If omitted, the script will automatically use the last Mythic+ run in the report.
+```
 
 Example
+
+```
 python wcl_to_mdt.py \
   --client-id "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" \
   --client-secret "yourSecretHerexxxxxxxxxxxxxxxxxxxx" \
   --url "https://www.warcraftlogs.com/reports/akzvc9Hq2b4BpZYK" \
   --fight 1
+```
 
 ### 4. Output
 After running successfully, the script will:
