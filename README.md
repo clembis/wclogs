@@ -5,13 +5,13 @@ This Python script automatically converts the trash pulls from a Warcraft Logs r
 This allows you to easily replicate, analyze, and share dungeon routes that you or others have completed.
 
 ## Features
-Fetches complete event data for a specific dungeon run from a WCL report using the official v2 API.
+1. Fetches complete event data for a specific dungeon run from a WCL report using the official v2 API.
 
-Intelligently groups enemy mobs into distinct pulls based on combat timing.
+2. Intelligently groups enemy mobs into distinct pulls based on combat timing.
 
-Generates a Mythic Dungeon Tool (MDT) import string that replicates the pulls from the log.
+3. Generates a Mythic Dungeon Tool (MDT) import string that replicates the pulls from the log.
 
-Outputs the string to both the console and a .txt file for easy access.
+4. Outputs the string to both the console and a .txt file for easy access.
 
 Supports specifying a particular fight ID or defaulting to the last Mythic+ run in the report.
 
@@ -27,19 +27,22 @@ Before you begin, ensure you have the following installed:
 ### 1. Get Warcraft Logs API Credentials
 To use this script, you need a Client ID and Client Secret from Warcraft Logs.
 
-Log in to your Warcraft Logs account.
+- Log in to your Warcraft Logs account.
 
-Navigate to your profile settings by clicking your avatar and selecting Settings.
+- Navigate to your profile settings by clicking your avatar and selecting Settings.
 
-In the left-hand menu, go to the API Clients section.
+- In the left-hand menu, go to the API Clients section.
 
-Click Create Client and fill out the form:
+- Click Create Client and fill out the form:
 
+
+```
 Name: MDT Converter Script (or any name you prefer)
 
 Redirect URL: http://localhost
 
 Description: A brief description of the script.
+```
 
 After creating the client, you will be provided with a Client ID and a Client Secret. Keep these safe and ready to use.
 
@@ -80,7 +83,7 @@ pip install requests
 ## Usage
 The script is run from the command line with arguments providing your API credentials and the report URL.
 
-### 3. Command Syntax
+### 1. Command Syntax
 
 ```
 python wcl_to_mdt.py --client-id "YOUR_CLIENT_ID" --client-secret "YOUR_CLIENT_SECRET" --url "WCL_REPORT_URL" [--fight FIGHT_ID]
@@ -108,7 +111,7 @@ python wcl_to_mdt.py \
   --fight 1
 ```
 
-### 4. Output
+### 2. Output
 After running successfully, the script will:
 
 Print the generated MDT import string directly to your console.
